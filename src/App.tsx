@@ -1,12 +1,17 @@
+import { menuItems } from './data/db';
 
-import './App.css'
+
+
 
 function App() {
 
+  console.log(menuItems)
 
   return (
     <>
-    <h1>Hola</h1>
+      <header className="bg-teal-700 py-5">
+        <h1 className="text-center text-4xl font-bold"> Calculadora de propinas</h1>
+      </header>
     </>
   )
 }
