@@ -19,7 +19,10 @@ const useOrder = () => {
         }
 
     }
-    return {addItem}
+    return {
+        addItem,
+        order
+    }
 
 
 }
