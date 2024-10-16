@@ -17,11 +17,17 @@ const useOrder = () => {
             const newItem = {...item, quantity:1}
             setOrder([...order, newItem]);
         }
-
     }
+
+    const removeItem = (id:MenuItem['id']) => {
+        const newOrder = order.filter(item => item.id !== id);
+        setOrder(newOrder);
+    }
+
     return {
         addItem,
-        order
+        order,
+        removeItem
     }
 
 
